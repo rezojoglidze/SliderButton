@@ -18,7 +18,7 @@ struct OnboardingView: View {
     
     var body: some View {
         ZStack {
-            Color.blue.opacity(0.7).ignoresSafeArea(.all, edges: .all)
+            Color("ColorBlue").ignoresSafeArea(.all, edges: .all)
             
             ZStack {
                 //MARK: Background(static)
@@ -40,7 +40,7 @@ struct OnboardingView: View {
                 //MARK: Capsule (Dynamic width)
                 HStack {
                     Capsule()
-                        .fill(.red.opacity(0.8))
+                        .fill(Color("ColorRed"))
                         .frame(width: 80)
                     
                     Spacer()
@@ -49,7 +49,7 @@ struct OnboardingView: View {
                 HStack {
                     ZStack {
                         Circle()
-                            .fill(.red.opacity(0.8))
+                            .fill(Color("ColorRed"))
                         Circle()
                             .fill(.black.opacity(0.15))
                             .padding(8)
