@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    /*
+    //MARK: Tasks
+     1. Users can drag and slide button to right direction
+     2. The button shape will grow horizontally as well
+     3. When we stop dragging the button halway and we relesea our fingers from the screen, button have to back its starting position
+     4. If we slide button at least end of the width, it have to stay there instead of back its starting position.
+     */
     
     var body: some View {
         ZStack {
