@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     /*
-    //MARK: Tasks
+     //MARK: Tasks
      1. Users can drag and slide button to right direction
      2. The button shape will grow horizontally as well
      3. When we stop dragging the button halway and we relesea our fingers from the screen, button have to back its starting position
@@ -23,7 +23,7 @@ struct ContentView: View {
             ZStack {
                 //PARTS OF CUSTOM BUTTON
                 
-                // 1. Background(static)
+                //MARK: Background(static)
                 Capsule()
                     .fill(.white.opacity(0.2))
                 
@@ -31,7 +31,7 @@ struct ContentView: View {
                     .fill(.white.opacity(0.2))
                     .padding(8)
                 
-                // 2. Call-to-action(static)
+                //MARK: Call-to-action(static)
                 
                 Text("Get Started")
                     .font(.system(.title3, design: .rounded))
@@ -39,7 +39,7 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .offset(x: 20)
                 
-                // 3. Capsule (Dynamic width)
+                //MARK: Capsule (Dynamic width)
                 HStack {
                     Capsule()
                         .fill(.red.opacity(0.8))
@@ -47,7 +47,7 @@ struct ContentView: View {
                     
                     Spacer()
                 }
-                // 4. Circle (Draggable)
+                //MARK: Circle (Draggable)
                 HStack {
                     ZStack {
                         Circle()
