@@ -21,8 +21,6 @@ struct ContentView: View {
             Color.blue.opacity(0.7).ignoresSafeArea(.all, edges: .all)
             
             ZStack {
-                //PARTS OF CUSTOM BUTTON
-                
                 //MARK: Background(static)
                 Capsule()
                     .fill(.white.opacity(0.2))
@@ -51,9 +49,9 @@ struct ContentView: View {
                 HStack {
                     ZStack {
                         Circle()
-                            .fill(.red.opacity(0.5))
+                            .fill(.red.opacity(0.8))
                         Circle()
-                            .fill(.black.opacity(0.1))
+                            .fill(.black.opacity(0.15))
                             .padding(8)
                         
                         Image(systemName: "chevron.right.2")
