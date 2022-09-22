@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    
+   @AppStorage("onboarding") var isOnboardingViewActive: Bool = true
+
     var body: some View {
         ZStack {
             Color("ColorBlue").ignoresSafeArea(.all, edges: .all)
