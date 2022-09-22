@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    private let colorBlue = Color("ColorBlue")
+    private let colorRed = Color("ColorRed")
+    private let chevronImage = Image(systemName: "chevron.right.2")
+
    @AppStorage("onboarding") var isOnboardingViewActive: Bool = true
 
     var body: some View {
